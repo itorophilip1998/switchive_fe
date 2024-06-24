@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "types": ["node", "aos"], // Add "aos" to the types array if necessary,
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,

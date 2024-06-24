@@ -1,0 +1,127 @@
+header {
+  //   background-image: url("/images/indexPage/headerBg.svg");
+  //   background-repeat: no-repeat !important;
+  //   background-size: cover;
+  nav {
+    .rightList,
+    ul,
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style-type: none !important;
+    }
+    .searchIcon {
+      position: absolute;
+      margin-left: 0.6rem;
+      margin-top: -0.4rem;
+    }
+    input {
+      padding-left: 2rem !important;
+      font-size: 12;
+      color: rgba(0, 0, 0, 0.3);
+      border-radius: 13px !important;
+      min-width: 350px;
+      min-height: 30px !important;
+      margin-top: -1rem;
+      -webkit-border-radius: 13px !important;
+      -moz-border-radius: 13px !important;
+      -ms-border-radius: 13px !important;
+      -o-border-radius: 13px !important;
+    }
+  }
+  .nav1 {
+    padding-top: 0;
+  }
+  .nav2 {
+    margin-top: -1rem;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+    .login {
+      width: 140px !important;
+    }
+    button {
+      margin: auto 0.3rem;
+    }
+    .notificationBadge {
+      margin-top: 1.7rem;
+      font-size: 8px;
+    }
+    ul {
+      padding-left: 4rem;
+    }
+    .routeLinks {
+      margin: 0 1rem;
+      border: 2px solid transparent !important;
+      a {
+        padding: 0;
+        &:hover,
+        &:active {
+          color: $linkBorder !important;
+        }
+      }
+    }
+  }
+  .linearBorderRight {
+    background: $linearLeftBg;
+    border-radius: 0 0 0 25px;
+    flex-shrink: 0; // width: 60vw;
+    width: max(50%, min(100%, 50%));
+    height: 20px;
+  }
+  .linearBorderLeft {
+    background: $linearLeftBg;
+    border-radius: 0 25px 0 0;
+    flex-shrink: 0;
+    width: max(50%, min(100%, 50%));
+    height: 27px;
+    -webkit-border-radius: 0 25px 0 0;
+    -moz-border-radius: 0 25px 0 0;
+    -ms-border-radius: 0 25px 0 0;
+    -o-border-radius: 0 25px 0 0;
+  }
+  .linearBorderLeftContainer {
+    position: absolute;
+    width: 100%;
+    margin-top: -1rem;
+  }
+}
+
+.link {
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+.mobileNav {
+  ul {
+    padding: 1rem;
+    li {
+      color: white;
+      list-style: none;
+      padding: .5rem 0;
+    }
+  }
+  padding:1rem;
+  z-index: 1000;
+  background: $mobileNav;
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 1000;
+  animation: slideIn 0.5s forwards; 
+  -webkit-animation: slideIn 0.5s forwards;
+}
+@keyframes slideIn {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
+ 
+ .topImage{
+  margin-top: -4rem;
+ }
