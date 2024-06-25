@@ -16,7 +16,7 @@ const CustomImage: React.FC<CustomImageProps> = ({ src, className }) => {
       width={width}
       height={height}
       layout="responsive"
-      priority
+       
       className={className}
     />
   );

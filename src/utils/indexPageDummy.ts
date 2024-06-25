@@ -51,19 +51,36 @@ export const navLinks2=[
 
 export const popularProducts=[
     {
-        imageLink:`${p}/debitCard.svg`,
+        imageLink:`indexPage/debitCard.svg`,
     },
     {
-        imageLink:`${p}/eneba.svg`,
+        imageLink:`indexPage/eneba.svg`,
     },
     {
-        imageLink:`${p}/freefire.svg`,
+        imageLink:`indexPage/freefire.svg`,
     },
     {
-        imageLink:`${p}/hotelgift.svg`,
+        imageLink:`indexPage/hotelgift.svg`,
     }, 
     {
-        imageLink:`${p}/freefire.svg`,
+        imageLink:`indexPage/freefire.svg`,
+    },
+]
+export const newProducts=[
+    {
+        imageLink:`indexPage/bobZoom.png`,
+    },
+    {
+        imageLink:`indexPage/xBox.svg`,
+    },
+    {
+        imageLink:`indexPage/cvs.svg`,
+    },
+    {
+        imageLink:`indexPage/hotelgift.svg`,
+    }, 
+    {
+        imageLink:`indexPage/freefire.svg`,
     },
 ]
 

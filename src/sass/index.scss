@@ -1,3 +1,12 @@
+ul::-webkit-scrollbar {
+    display: none !important;
+  }
+   
+  ul {
+    -ms-overflow-style: none !important;   
+    scrollbar-width: none !important; 
+ }
+
 // external import
 @import "aos/dist/aos.css";
 
@@ -19,3 +28,4 @@
 // import pages
 @import './pages/indexPage';
  
+

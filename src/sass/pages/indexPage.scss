@@ -1,56 +1,94 @@
-.heroBg{
-    .bgHeroContainer{
-        height:74vh;
-        width:100%;
-        // position:absolute;
-        // inset: 0;
-        // top:9rem;
-        // z-index: 0;
- 
-
+.indexPage {
+  .heroBg {
+    .bgHeroContainer {
+      height: 74vh;
+      width: 100%;
+      // position:absolute;
+      // inset: 0;
+      // top:9rem;
+      // z-index: 0;
     }
-   img{
-    height:100%;
-        width:100%;
-   }
- 
-}
-.textHeroBg{  
-     position:absolute;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .textHeroBg {
+    position: absolute;
     // background:red;
     padding: 5rem 2rem;
-     // inset: 0;
-     top:9rem;
-     // z-index: 0;
-     .imgherobg.img{
-        width:90% !important; 
-     }
-     .topImage{
-        width: 150px !important;
-     }
-     h1{ 
-        font-size: clamp(20px, 5vw + 10px, 49.29px);
-    font-weight: 700;
-    line-height: 71px;
-    text-align: left;
-    color:white;
-    max-width: 707px; 
-gap: 0px; 
+    // inset: 0;
+    top: 9rem;
+    // z-index: 0;
+    .imgherobg.img {
+      width: 90% !important;
+    }
+    .topImage {
+      width: 150px !important;
+    }
+    h1 {
+      font-size: clamp(20px, 5vw + 10px, 49.29px);
+      font-weight: 700;
+      line-height: 71px;
+      text-align: left;
+      color: white;
+      max-width: 707px;
+      gap: 0px;
+    }
+    p {
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 28px;
+      text-align: left;
+      color: rgba(255, 255, 255, 1); 
+      max-width: 628px;
+    }
+  }
 
-     }
- p{
-    font-family: Inter;
-font-size: 14px;
-font-weight: 400;
-line-height: 28px;
-text-align: left;
-color: rgba(255, 255, 255, 1);
 
 
-max-width: 628px; 
+  .productContainer{
+    margin-top: 4rem;
+    .products{
+        display: flex;
+        width: 95%;
+        align-items: center;
+        padding:0 1rem;
+        margin:auto;
 
- 
-     }
+
+        .btn{
+            width: Hug (36px)px;
+            height: Hug (34px)px;
+            padding: 5px 6px 5px 6px;
+            gap: 10px;
+            border-radius: 4px ;
+            -webkit-border-radius: 4px ;
+            -moz-border-radius: 4px ;
+            -ms-border-radius: 4px ;
+            -o-border-radius: 4px ;
+            background: rgba(232, 238, 255, 1);
+
 }
+    }
+    .productList{
+        display: flex;
+        width: 94%;
+        margin:auto;
+        overflow-x: scroll;
+        padding:0 ;
+        li{
+            list-style: none;
+            margin: 0 1.5rem;
 
- 
+            .productImage{
+                width: 300px !important;
+                height: 200px; 
+                border-radius: 10px 0px 0px 0px; 
+            }
+        }
+       
+    }
+  }
+}
