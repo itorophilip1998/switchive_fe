@@ -3,12 +3,12 @@ import Image from 'next/image';
 interface CustomImageProps {
   src: string;
   className?: string;
+  width?: string;
+  height?: string;
 }
 
-const CustomImage: React.FC<CustomImageProps> = ({ src, className }) => {
-  const width = 100;
-  const height = 100;
-
+const CustomImage: React.FC<CustomImageProps> = ({ src, className,width= 100,height= 100}) => {
+    
   return (
     <Image
       src={`/images/${src}`}

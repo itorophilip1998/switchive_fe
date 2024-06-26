@@ -110,8 +110,7 @@
       align-items: center;
       margin: auto;
       .btn {
-        width: Hug (36px) px;
-        height: Hug (34px) px;
+        
         padding: 5px 6px 5px 6px;
         gap: 10px;
         border-radius: 4px;
@@ -171,5 +170,44 @@ color: $secondary;
       margin:2rem 0;
 
     }
+    
+  }
+
+  // SupportedBlockchains
+  .SupportedBlockchains{
+    h1{
+      font-family: Poppins;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 47px;
+    text-align: center;
+     
+
+    }
+    .blockChainIcons{
+      width: 100.34px !important;
+      height: 172.34px ; 
+    }
+  }
+
+  // BlogCards
+  .blogTxt{
+    width: 95%;
+    margin:auto;
+    background: rgba(217, 217, 217, 1);
+  display:flex;
+  justify-content: space-between; 
+  height: 60px;  
+  align-items: center;
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 47px; 
+  
+  // div{
+  //   border:1rem solid rgba(217, 217, 217, 1);
+   
+
+  // }
   }
 }

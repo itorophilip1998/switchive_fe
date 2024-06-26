@@ -201,74 +201,141 @@ export const promotionsDetails=[
 
 export const categoryCards=[
     {
-        imageLink:`${p}/fashion.svg`,
+        imageLink:`${u}/fashion.svg`,
         name:'Fashion'
     },
     {
-        imageLink:`${p}/gaming.svg`,
+        imageLink:`${u}/gaming.svg`,
         name:'Gaming'
     },
     {
-        imageLink:`${p}/stayConnected.svg`,
+        imageLink:`${u}/stayConnected.svg`,
         name:'Stay Connected'
     },
     {
-        imageLink:`${p}/food.svg`,
+        imageLink:`${u}/food.svg`,
         name:'Food'
     },
     {
-        imageLink:`${p}/travel.svg`,
+        imageLink:`${u}/travel.svg`,
         name:'Travel'
     },
     {
-        imageLink:`${p}/entertainment.svg`,
+        imageLink:`${u}/entertainment.svg`,
         name:'Entertainment'
     },
     {
-        imageLink:`${p}/retails.svg`,
+        imageLink:`${u}/retails.svg`,
         name:'Retails'
     },
     {
-        imageLink:`${p}/globalConnectivity.svg`,
+        imageLink:`${u}/globalConnectivity.svg`,
         name:'Global Connectivity'
     },
 ]
 
 export const blockChainList=[
     {
-        imageLink:`${p}/doge.svg`,
+        imageLink:`${u}/doge.svg`,
          
     },
     {
-        imageLink:`${p}/tron.svg`,
+        imageLink:`${u}/tron.svg`,
        
     },
     {
-        imageLink:`${p}/tether.svg`,
+        imageLink:`${u}/tether.svg`,
         
     },
     {
-        imageLink:`${p}/liteCoin.svg`,
+        imageLink:`${u}/liteCoin.svg`,
          
     },
     {
-        imageLink:`${p}/solana.svg`,
+        imageLink:`${u}/solana.svg`,
        
     },
     {
-        imageLink:`${p}/bitcoin.svg`,
+        imageLink:`${u}/bitcoin.svg`,
         
     },
     {
-        imageLink:`${p}/ethereum.svg`,
+        imageLink:`${u}/ethereum.svg`,
         
     },
     {
-        imageLink:`${p}/polygon.svg`,
+        imageLink:`${u}/polygon.svg`,
+        
+    },
+     
+    {
+        imageLink:`${u}/tether.svg`,
         
     },
     {
-        imageLink:`${p}/tron.svg`,
+        imageLink:`${u}/liteCoin.svg`,
+         
+    },
+    {
+        imageLink:`${u}/solana.svg`,
+       
+    },
+    {
+        imageLink:`${u}/bitcoin.svg`,
         
     },
 ]
+
+
+export const blogCard=[
+    {
+        imageLink:`${u}/blog1.svg`,
+         title:"New Switchive",
+    },
+    {
+        imageLink:`${u}/blog2.svg`,
+         title:"Block",
+    },
+    {
+        imageLink:`${u}/blog3.svg`,
+         title:"Cypto Space ",
+    },
+    {
+        imageLink:`${u}/blog2.svg`,
+         title:"Etherum Evolution",
+    },
+    {
+        imageLink:`${u}/blog1.svg`,
+         title:"P2P Market Chain",
+    },
+    
+
+];
+
+export const companyFooter=[
+    "About Us",
+  "Terms of Use",
+  "Privacy Policy",
+  "Disclaimer"
+];
+export const businessFooter = [
+    "Prime",
+    "Custody",
+    "Asset Hub",
+    "Commerce"
+  ];
+  export const exchangeFooter = [
+    "Exchange Home",
+    "Margin Trading",
+    "Derivatives Trading",
+    "Trading Arena"
+  ];
+  export const resourceFooter = [
+    "Prices",
+    "Site Widgets",
+    "Tax",
+    "Blog",
+    "Research"
+  ];
+  
+  

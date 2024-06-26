@@ -7,19 +7,21 @@ ul::-webkit-scrollbar {
     scrollbar-width: none !important; 
  }
 
+
 // external import
 @import "aos/dist/aos.css";
 
 // import utils
+@import './utils/typography';  
 @import './utils/fonts'; 
 @import './utils/variables';
 @import './utils/animation';
 @import './utils/colors';
 @import './utils/responsive';
 
-
 // import layouts
 @import './layouts/header';
+@import './layouts/footer';
 
 
 // import components

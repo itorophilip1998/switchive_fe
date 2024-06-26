@@ -4,7 +4,7 @@ import CustomImage from '../CustomImage'
 function ManageGiftCards() {
   return (
     <div className="ContainerBox my-0  ManageGiftCards">
-        <div className="row m-0">
+        <div className="row m-0 align-items-center">
       <div className="col-md-6">
         <h1>
         Manage from <br/> anywhere
