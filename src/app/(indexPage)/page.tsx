@@ -1,6 +1,6 @@
-import HeroBG from '@/components/indexPageComponents/HeroBG'
-import PromotionsCard from '@/components/indexPageComponents/ProductsCard'
-import { newProducts, popularProducts } from '@/utils/indexPageDummy'
+ 
+import {ProductsCard,HeroBG,GiftCard, Promotions,ManageGiftCards} from '@/components/indexPageComponents';
+import { giftCard, newProducts, popularProducts,promotionsDetails } from '@/utils/indexPageDummy'
 import React from 'react'
 
 function page() {
@@ -8,8 +8,13 @@ function page() {
     <div className="indexPage">
       <HeroBG/> 
        {/* Popular/New products */}
-      <PromotionsCard imageList={popularProducts} location={"USA"} slug={"Popular"}/> 
-      <PromotionsCard imageList={newProducts} location={"USA"} slug={"New"}/> 
+      <div className="ContainerBox ">
+      <ProductsCard imageList={popularProducts} location={"USA"} slug={"Popular"}/> 
+      <ProductsCard imageList={newProducts} location={"USA"} slug={"New"}/>  
+      <GiftCard list={giftCard} />   
+      <Promotions list={promotionsDetails} />   
+      <ManageGiftCards   />   
+      </div>
     </div>
   )
 }

@@ -22,14 +22,14 @@ function HeroBG() {
         <CustomImage src={"indexPage/HeroBG.png"} />
         </div>
  
-        <div className="textHeroBg ">
+           <div className="textHeroBg ">
                <div className="row m-0  ">
                 <div className="col-md-6 px-5">
                 <CustomImage src={"indexPage/illustration.svg"} className={'topImage'}  />
 
                   <h1  data-aos="fade-up">
-                  Shop with <span className="text-warning">
-                     <Typical steps={[texts[index], 2000]} loop={1} wrapper="p" /></span><br/>
+                  Shop with  
+                     <Typical steps={[texts[index], 2000]} loop={1} wrapper="p" className="Typical" /> <br/>
                   and Earn Points
                   </h1>
                   <p>Make mobile top-ups, buy gift cards and pay bills with crypto for more than 14,000 products worldwide in over 170 countries and earn points.
@@ -40,7 +40,7 @@ function HeroBG() {
                   </Link>
                 </div>
 
-
+  
                 <div className="col-md-6 d-none d-md-block imgherobg">
                 <CustomImage src={"indexPage/sideHeroBg.svg"}  />
                     

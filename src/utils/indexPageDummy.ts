@@ -1,6 +1,7 @@
 import moment from "moment";
 
 const p='/images/indexPage';
+const u='/indexPage';
 const t=Date.now()
 export const navLinks=[
     {
@@ -65,6 +66,24 @@ export const popularProducts=[
     {
         imageLink:`indexPage/freefire.svg`,
     },
+    {
+        imageLink:`indexPage/bobZoom.png`,
+    },
+    {
+        imageLink:`indexPage/xBox.svg`,
+    },
+    {
+        imageLink:`indexPage/cvs.svg`,
+    },
+    {
+        imageLink:`indexPage/hotelgift.svg`,
+    }, 
+    {
+        imageLink:`indexPage/freefire.svg`,
+    },
+    {
+        imageLink:`indexPage/debitCard.svg`,
+    },
 ]
 export const newProducts=[
     {
@@ -82,66 +101,102 @@ export const newProducts=[
     {
         imageLink:`indexPage/freefire.svg`,
     },
+    {
+        imageLink:`indexPage/debitCard.svg`,
+    },
+    {
+        imageLink:`indexPage/eneba.svg`,
+    },
+    {
+        imageLink:`indexPage/freefire.svg`,
+    },
+    {
+        imageLink:`indexPage/hotelgift.svg`,
+    }, 
+    {
+        imageLink:`indexPage/freefire.svg`,
+    },
 ]
 
 export const giftCard=[
     {
         name:`USD GIFT CARD`,
-       currency:'United States Dollar'
+       currency:'United States Dollar',
+       imageLink:`${u}/NGN.svg`,
+
     },
     {
         name:`GBP GIFT CARD`,
-       currency:'British Pound Sterling '
+       currency:'British Pound Sterling',
+       imageLink:`${u}/USD.svg`,
+
     },
     {
         name:`CAD GIFT CARD`,
-       currency:'Canadian Dollar'
+       currency:'Canadian Dollar',
+       imageLink:`${u}/GBP.svg`,
+
     }, 
     {
         name:`NGN GIFT CARD`,
-       currency:'Nigerian Naira'
+       currency:'Nigerian Naira',
+       imageLink:`${u}/NGN.svg`,
+
+    },
+    
+    {
+        name:`GBP GIFT CARD`,
+       currency:'British Pound Sterling',
+       imageLink:`${u}/USD.svg`,
+
     },
     {
-        name:`GHS GIFT CARD`,
-       currency:'Ghanian Cedis'
-    },
-        
-]
-export const promotionsDetails=[
+        name:`CAD GIFT CARD`,
+       currency:'Canadian Dollar',
+       imageLink:`${u}/GBP.svg`,
+
+    }, 
     {
-        imageLink:`${p}/100pTop-up.svg`,
-        title:`New Leveraged Pairs Added to Margin Trading on the Crypto.com Exchange`,
-       description:'We urge everyone adopt good cybersecurity habits, and to have unique passwords on every site they use...',
-       author:"Jennia Peris",
-        date:moment(t).format('dd/mm/yyyy'),
-        time:moment(t).startOf('hour').fromNow(),
-    },
-    {
-        imageLink:`${p}/coinList.svg`,
-        title:`New Leveraged Pairs Added to Margin Trading on the Crypto.com Exchange`,
-       description:'We urge everyone adopt good cybersecurity habits, and to have unique passwords on every site they use...',
-       author:"Jennia Peris",
-        date:moment(t).format('dd/mm/yyyy'),
-        time:moment(t).startOf('hour').fromNow(),
-    },
-    {
-        imageLink:`${p}/stockMarketsvg`,
-        title:`New Leveraged Pairs Added to Margin Trading on the Crypto.com Exchange`,
-       description:'We urge everyone adopt good cybersecurity habits, and to have unique passwords on every site they use...',
-       author:"Jennia Peris",
-        date:moment(t).format('dd/mm/yyyy'),
-        time:moment(t).startOf('hour').fromNow(),
-    },
-    {
-        imageLink:`${p}/bunchOfCoin.svg`,
-        title:`New Leveraged Pairs Added to Margin Trading on the Crypto.com Exchange`,
-       description:'We urge everyone adopt good cybersecurity habits, and to have unique passwords on every site they use...',
-       author:"Jennia Peris",
-        date:moment(t).format('dd/mm/yyyy'),
-        time:moment(t).startOf('hour').fromNow(),
+        name:`NGN GIFT CARD`,
+       currency:'Nigerian Naira',
+       imageLink:`${u}/NGN.svg`,
+
     },
     
         
+]
+export const promotionsDetails=[
+    // {
+    //     imageLink:`${p}/100pTop-up.svg`,
+    //     title:`New Leveraged Pairs Added to Margin Trading on the Crypto.com Exchange`,
+    //    description:'We urge everyone adopt good cybersecurity habits, and to have unique passwords on every site they use...',
+    //    author:"Jennia Peris",
+    //     date:moment(t).format('dd/mm/yyyy'),
+    //     time:moment(t).startOf('hour').fromNow(),
+    // },
+     
+    {
+        imageLink:`${u}/01.svg`, 
+    },
+    {
+        imageLink:`${u}/02.svg`, 
+    },
+    {
+        imageLink:`${u}/03.svg`, 
+    },
+    {
+        imageLink:`${u}/04.svg`, 
+    },
+    {
+        imageLink:`${u}/03.svg`, 
+    },
+    {
+        imageLink:`${u}/02.svg`, 
+    },
+    {
+        imageLink:`${u}/04.svg`, 
+    },
+       
 ]
 
 export const categoryCards=[
