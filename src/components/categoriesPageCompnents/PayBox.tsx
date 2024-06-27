@@ -17,9 +17,9 @@ function PayBox() {
                     <button className='btn shadow-sm border-0'  onClick={()=>setValue(item)} key={key}>{item}</button>
                 ))}
             </div>
-            <div className="row col-8">
+            <div className="row ">
                 <div className="col-md-8">
-                    <input type="text" className='form-control p-3 text-center text-bold shadow-sm ' value={value} placeholder="Amount"/>
+                    <input type="number" className='form-control p-3 text-center text-bold shadow-sm ' onChange={(e)=>setValue(e.target.value)} value={value} placeholder="Amount"/>
                     {/* <span className='text-success d-block'> Delivered Amount in USD 1000</span> */}
                 </div>
                 <div className="col-md-4">

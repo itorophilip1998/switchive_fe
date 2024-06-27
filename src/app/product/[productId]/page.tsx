@@ -14,36 +14,54 @@ function Page() {
   const navigate = useRouter();
 
   return (
-    <div className='product containerLayout'>
-      <div className="productDetails">
-        <h4 className="title-text ">
-          Skype
-        </h4>
-        <p>
-          Lorem Ipsum is simply dummy text
-        </p>
+    <div className='product containerLayout '>
+      <div className="productDetails container">
+        <div className="header-Details">
+          <h4 className="title-text text-bold ">
+            Skype
+          </h4>
+          <p>
+            Lorem Ipsum is simply dummy text
+          </p>
+        </div>
 
         <div className="row desInfo ">
-          <div className="col-md-4"></div>
-          <div className="col-md-8 ">
+          <div className="col-md-3">
+            <button className="btn  online px-4 my-4  ">online</button>
+            <div className="productsPageCard ">
+              <CustomImage src={'categories/c3.svg'} />
+              <h4 className="text-bold">PKR 1000 - 50000</h4>
+            </div>
+
+            <div className="watchList">
+              <button className="btn  btn-primary px-5 py-4 my-4 text-center  ">Add to Wishlist </button>
+              <ul>
+                <li> <CustomImage src={'product/h1.svg'} /> Instant delivery</li>
+                <li> <CustomImage src={'product/h3.svg'} /> Lower network fees</li>
+                <li> <CustomImage src={'product/h2.svg'} /> Private and safe payment</li>
+              </ul>
+            </div>
+
+          </div>
+          <div className="col-md-7 ">
             <div className={'desList'}>
-              <CustomImage src={`product/m1.svg`}/>
-              <CustomImage src={`product/m2.svg`}/>
-              <CustomImage src={`product/m3.svg`}/>
+              <CustomImage src={`product/m1.svg`} />
+              <CustomImage src={`product/m2.svg`} />
+              <CustomImage src={`product/m3.svg`} />
             </div>
             <p>
               <h4>  Lorem Ipsum</h4>
-              is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to makeLorem Ipsum is simply dummy text of the printing and typesetting industry. 
-              is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to makeLorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to makeLorem Ipsum is simply dummy text of the printing and typesetting industry.
+              is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to makeLorem Ipsum is simply dummy text of the printing and typesetting industry.
 
-             </p>
+            </p>
             <p>   <h4>  Lorem Ipsum</h4>
-            is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to makeLorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to makeLorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to makeLorem Ipsum is simply dummy text of the printing and typesetting industry. 
-           
-              </p>
-              <PayBox/>
+              is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to makeLorem Ipsum is simply dummy text of the printing and typesetting industry.
+              is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to makeLorem Ipsum is simply dummy text of the printing and typesetting industry.
+              is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to makeLorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+            </p>
+            <PayBox />
           </div>
         </div>
 
