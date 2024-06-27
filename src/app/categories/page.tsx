@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import CustomImage from '@/components/CustomImage';
 import { topProduct } from '@/utils/indexPageDummy';
 import SideBar from '@/components/categoriesPageCompnents/SideBar';
+import Faq from '@/components/Faq';
 
 interface ProductItem {
   imageLink: string;
@@ -12,7 +13,8 @@ interface ProductItem {
 
 const Page = () => {
   return (
-    <div className={'categories containerLayout'}>
+    <div className={' containerLayout'}>
+      <div className="categories">
       <SideBar />
       <div className={"categoriesCustomList"}>
         {topProduct?.map((item: ProductItem, key: number) => (
@@ -28,7 +30,10 @@ const Page = () => {
             </div>
           </div>
         ))}
+
       </div>
+      </div>
+      <Faq/>
     </div>
   );
 }

@@ -14,9 +14,9 @@ function page() {
       <GiftCard list={giftCard} />   
       <Promotions list={promotionsDetails} />   
       <ManageGiftCards   />   
-      <CategoriesCard  list={categoryCards} />   
-      <SupportedBlockchains  list={blockChainList} />   
-      <BlogCards  list={blogCard} />   
+      <CategoriesCard list={categoryCards} />   
+      <SupportedBlockchains list={blockChainList} />   
+      <BlogCards list={blogCard} />   
       </div>
     </div>
   )

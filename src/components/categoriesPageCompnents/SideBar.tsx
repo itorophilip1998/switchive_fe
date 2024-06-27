@@ -1,7 +1,7 @@
 'use client'
 import React, { Suspense } from 'react';
-import { useRouter, useSearchParams } from 'next/navigation'; // Import useRouter and useSearchParams from next/navigation
-import { categories } from '@/utils/indexPageDummy'; // Import categories from '@/utils/indexPageDummy'
+import { useRouter, useSearchParams } from 'next/navigation';  
+import { categories } from '@/utils/indexPageDummy';  
 
 const SideBar: React.FC = () => {
   const router = useRouter();
@@ -19,12 +19,11 @@ const SideBar: React.FC = () => {
 
 const SidebarContent: React.FC = () => {
   const searchParams = useSearchParams();
-  const typeSearch = searchParams.get('type'); // Retrieve 'type' query parameter from searchParams
-
+  const typeSearch = searchParams.get('type');  
   const router = useRouter();
 
   const navigate = (type: string) => {
-    router.push(`/categories?type=${type}`); // Navigate to /categories with 'type' query parameter
+    router.push(`/categories?type=${type}`);  
   };
 
   return (

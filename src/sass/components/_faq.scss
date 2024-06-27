@@ -1,3 +1,41 @@
 .faq{
+    display: flex;
+    justify-content: space-around;
+    gap:40px;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    box-sizing: border-box;
+    border: 2px solid transparent; /* Set a transparent solid border */
+    border-image: linear-gradient(to right, rgba(33, 66, 147, 1), rgba(33, 66, 147, 1), rgba(236, 32, 39, 1)) 1;
+    padding: 3rem;
     
+    .card{
+        border:none;
+    }
+    img{
+        width: 44px !important;
+       height: 44px !important;
+       margin-left: 1rem;
+    }
+    .card-title{
+        color: $secondary;
+    width: 339px;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: inline-block;
+    }
+    a{
+        color: $secondary;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-decoration-line: underline;
+display: inline-block;
+    }
+    border-radius: 8px !important;  
 }

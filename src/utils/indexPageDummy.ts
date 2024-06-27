@@ -504,3 +504,27 @@ export const businessFooter = [
     
 
 ];
+
+export const faq=[
+    { 
+         title:"FAQ",
+         url:'/#faq',
+        imageLink:`${c}/faq.svg`,
+
+    },
+    { 
+         title:"How it works",
+         url:'/#faq',
+        imageLink:`${c}/question-mark.svg`,
+
+
+    },
+    { 
+         title:"Blog",
+         url:'/#faq',
+        imageLink:`${c}/blog.svg`,
+
+
+    },
+
+]
