@@ -15,7 +15,7 @@ function HeroBG() {
     }, 3000); // Change text every 3 seconds
 
     return () => clearInterval(interval);
-  }, []);
+  }, [texts?.length]);
   return ( 
       <div className='heroBg'> 
         <div className="bgHeroContainer  ">
