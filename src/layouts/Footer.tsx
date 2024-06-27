@@ -6,11 +6,8 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 
-interface FooterProps {
-  list: string[];  
-}
-
-const Footer: React.FC<FooterProps> = () => {
+ 
+const Footer  = () => {
  
   return (
     <footer> 

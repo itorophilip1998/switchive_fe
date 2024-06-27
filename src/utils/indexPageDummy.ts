@@ -2,28 +2,26 @@ import moment from "moment";
 
 const p='/images/indexPage';
 const u='/indexPage';
+const c='/categories';
 const t=Date.now()
 export const navLinks=[
     {
-        url:'/#top-up',
+        url:'/',
+        name:'Home', 
+    },
+    {
+        url:'/categories?type=Prepaid Phone',
         name:'Mobile Top Up'
     },
     {
-        url:'/#gift-cards',
+        url:'/categories?type=Gift Card Deals',
         name:'Gift Cards'
     },
+     
     {
-        url:'/#blogs',
-        name:'Blogs'
-    },
-    {
-        url:'/#pay-bills',
+        url:'/categories?type=Mobile Phone',
         name:'Pay Bills'
-    },
-    {
-        url:'/#blogs',
-        name:'Blogs'
-    },
+    }, 
 ]
 
 export const navLinks2=[
@@ -338,4 +336,171 @@ export const businessFooter = [
     "Research"
   ];
   
+  export const categories = [
+    "Top Products",
+    "Food",
+    "Sports",
+    "Travel",
+    "Bitcoin",
+    "Gaming",
+    "Groceries",
+    "Clothing",
+    "Streaming",
+    "Electronics",
+    "Restaurants",
+    "Mobile Phone",
+    "Home Goods",
+    "Entertainment",
+    "Gift Card Deals",
+    "Prepaid Phone"
+  ];
   
+
+  export const topProduct=[
+    {
+        imageLink:`${c}/c1.svg`,
+         title:"CoinGate",
+    },
+    {
+        imageLink:`${c}/c2.svg`,
+         title:"Skype",
+    },
+    {
+        imageLink:`${c}/c3.svg`,
+         title:"Sony PlayStation ",
+    },
+    {
+        imageLink:`${c}/c4.svg`,
+         title:"App Store",
+    },
+    {
+        imageLink:`${c}/c25.svg`,
+         title:"Eneba",
+    },
+    {
+        imageLink:`${c}/c28.svg`,
+         title:"Diccord Nitro",
+    },
+    {
+        imageLink:`${c}/c26.svg`,
+         title:"NetFlix",
+    },
+    {
+        imageLink:`${c}/c27.svg`,
+         title:"Blizzarad",
+    },
+    {
+        imageLink:`${c}/c06.svg`,
+         title:"Macy’s",
+    },
+    {
+        imageLink:`${c}/c14.svg`,
+         title:"Primark",
+    },
+    {
+        imageLink:`${c}/c20.svg`,
+         title:"Zappos",
+    },
+    {
+        imageLink:`${c}/c22.svg`,
+         title:"River Island",
+    },
+    {
+        imageLink:`${c}/c1.svg`,
+         title:"CoinGate",
+    },
+    {
+        imageLink:`${c}/c2.svg`,
+         title:"Skype",
+    },
+    {
+        imageLink:`${c}/c3.svg`,
+         title:"Sony PlayStation ",
+    },
+    {
+        imageLink:`${c}/c4.svg`,
+         title:"App Store",
+    },
+    {
+        imageLink:`${c}/c25.svg`,
+         title:"Eneba",
+    },
+    {
+        imageLink:`${c}/c28.svg`,
+         title:"Diccord Nitro",
+    },
+    {
+        imageLink:`${c}/c26.svg`,
+         title:"NetFlix",
+    },
+    {
+        imageLink:`${c}/c27.svg`,
+         title:"Blizzarad",
+    },
+    {
+        imageLink:`${c}/c06.svg`,
+         title:"Macy’s",
+    },
+    {
+        imageLink:`${c}/c14.svg`,
+         title:"Primark",
+    },
+    {
+        imageLink:`${c}/c20.svg`,
+         title:"Zappos",
+    },
+    {
+        imageLink:`${c}/c22.svg`,
+         title:"River Island",
+    },
+    {
+        imageLink:`${c}/c1.svg`,
+         title:"CoinGate",
+    },
+    {
+        imageLink:`${c}/c2.svg`,
+         title:"Skype",
+    },
+    {
+        imageLink:`${c}/c3.svg`,
+         title:"Sony PlayStation ",
+    },
+    {
+        imageLink:`${c}/c4.svg`,
+         title:"App Store",
+    },
+    {
+        imageLink:`${c}/c25.svg`,
+         title:"Eneba",
+    },
+    {
+        imageLink:`${c}/c28.svg`,
+         title:"Diccord Nitro",
+    },
+    {
+        imageLink:`${c}/c26.svg`,
+         title:"NetFlix",
+    },
+    {
+        imageLink:`${c}/c27.svg`,
+         title:"Blizzarad",
+    },
+    {
+        imageLink:`${c}/c06.svg`,
+         title:"Macy’s",
+    },
+    {
+        imageLink:`${c}/c14.svg`,
+         title:"Primark",
+    },
+    {
+        imageLink:`${c}/c20.svg`,
+         title:"Zappos",
+    },
+    {
+        imageLink:`${c}/c22.svg`,
+         title:"River Island",
+    },
+    
+
+];

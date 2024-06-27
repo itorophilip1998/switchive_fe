@@ -6,6 +6,7 @@ ul::-webkit-scrollbar {
     -ms-overflow-style: none !important;   
     scrollbar-width: none !important; 
  }
+ 
 
 
 // external import
@@ -30,5 +31,6 @@ ul::-webkit-scrollbar {
 
 // import pages
 @import './pages/indexPage';
+@import './pages/categories';
  
 
