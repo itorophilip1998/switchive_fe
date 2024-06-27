@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { RiCloseLargeLine } from 'react-icons/ri';
-import { navLinks, navLinks2 } from '@/utils/indexPageDummy'; // Adjust path as per your project structure
+import { navLinks, navLinks2 } from '@/utils/dummy'; // Adjust path as per your project structure
 
 function Header() { 
   const [currentUrl, setCurrentUrl] = useState<string>('');

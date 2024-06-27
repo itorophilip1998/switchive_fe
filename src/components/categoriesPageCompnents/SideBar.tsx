@@ -1,7 +1,7 @@
 'use client'
 import React, { Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';  
-import { categories } from '@/utils/indexPageDummy';  
+import { categories } from '@/utils/dummy';  
 
 const SideBar: React.FC = () => {
   const router = useRouter();

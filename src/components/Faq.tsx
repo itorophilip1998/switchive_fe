@@ -1,7 +1,7 @@
 import React from 'react';
 import CustomImage from './CustomImage';  
 import Link from 'next/link';  
-import { faq } from '@/utils/indexPageDummy';  
+import { faq } from '@/utils/dummy';  
 
 function Faq() {
   return (

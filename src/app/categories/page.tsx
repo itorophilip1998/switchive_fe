@@ -2,9 +2,10 @@
 import { useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 import CustomImage from '@/components/CustomImage';
-import { topProduct } from '@/utils/indexPageDummy';
+import { topProduct } from '@/utils/dummy';
 import SideBar from '@/components/categoriesPageCompnents/SideBar';
 import Faq from '@/components/Faq';
+import CategoryProductCard from '@/components/categoriesPageCompnents/CategoryProductCard';
 
 interface ProductItem {
   imageLink: string;
@@ -18,17 +19,7 @@ const Page = () => {
       <SideBar />
       <div className={"categoriesCustomList"}>
         {topProduct?.map((item: ProductItem, key: number) => (
-          <div key={key} className={"card"} style={{ width: "18rem" }}>
-            <CustomImage 
-              src={item?.imageLink} 
-              className={"card-img-top"} 
-            />
-            <div className={"card-body px-0"}>
-              <p className={"card-text"}>
-                {item?.title}
-              </p>
-            </div>
-          </div>
+          <CategoryProductCard key={key} item={item}/> 
         ))}
 
       </div>

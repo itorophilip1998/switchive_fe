@@ -1,6 +1,6 @@
  
 import {ProductsCard,HeroBG,GiftCard, Promotions,ManageGiftCards,CategoriesCard,SupportedBlockchains,BlogCards} from '@/components/indexPageComponents';
-import { giftCard, newProducts, popularProducts,promotionsDetails,categoryCards ,blockChainList,blogCard} from '@/utils/indexPageDummy'
+import { giftCard, newProducts, popularProducts,promotionsDetails,categoryCards ,blockChainList,blogCard} from '@/utils/dummy'
 import React from 'react'
 
 function page() {

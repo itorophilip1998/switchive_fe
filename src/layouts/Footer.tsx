@@ -1,5 +1,5 @@
 import CustomImage from '@/components/CustomImage';
-import { companyFooter,businessFooter ,exchangeFooter,resourceFooter} from '@/utils/indexPageDummy';
+import { companyFooter,businessFooter ,exchangeFooter,resourceFooter} from '@/utils/dummy';
 import React from 'react';
 import { FaFacebookF } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
