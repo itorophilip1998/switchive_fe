@@ -13,5 +13,12 @@
 }
 .btn-danger{
     background: $primary !important;
+}
 
+.btn{
+    transition:  transform 0.3s !important;
+    &:hover
+{
+         transform: scale(1.1); 
+}
 }

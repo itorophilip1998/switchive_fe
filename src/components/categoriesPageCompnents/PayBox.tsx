@@ -19,12 +19,11 @@ function PayBox() {
             </div>
             <div className="row col-8">
                 <div className="col-md-8">
-                    <input type="text" className='form-control p-3 text-center text-bold shadow-none ' value={value} placeholder="Amount"/>
+                    <input type="text" className='form-control p-3 text-center text-bold shadow-sm ' value={value} placeholder="Amount"/>
                     {/* <span className='text-success d-block'> Delivered Amount in USD 1000</span> */}
-
                 </div>
                 <div className="col-md-4">
-                    <select className="form-select p-3" onChange={(e)=>setValue(e.target.value)}>
+                    <select className="form-select p-3 " onChange={(e)=>setValue(e.target.value)}>
                         <option value="">Select Estimated</option>
                         {usdtEstimation.map((item, key) => (
                             <option key={key} value={`${item}000`}>
@@ -35,13 +34,12 @@ function PayBox() {
                 </div>
                 
                 <div className="col-md-8 mt-4 ">
-                <span className='d-block'> The Phone Number to refill</span>
-
-                    <input type="text" className='form-control p-3 shadow-none' value="44 58 52 46"  readOnly/>
+                <span className='d-block'> The Phone Number to refill</span> 
+                    <input type="text" className='form-control p-3 shadow-sm text-center' value="44 58 52 46"  readOnly/>
                 </div>
                 <div className="col-md-4 mt-5">
                 <button className='btn p-3 mx-3' >Close</button>
-                <button className='btn btn-primary p-3 shadow-sm'>Add to Caret</button>
+                <button className='btn btn-primary p-3 shadow-sm '>Add to Cart</button>
                     
                 </div>
             </div>
