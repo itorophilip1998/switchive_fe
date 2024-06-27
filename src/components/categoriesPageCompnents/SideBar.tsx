@@ -7,7 +7,7 @@ import { categories } from '@/utils/indexPageDummy';
 const SideBar: React.FC = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const typeSearch = searchParams.get('type');
+  const typeSearch = searchParams.get('type') ;
   const navigate = (type: string) => {
     router.push(`/categories?type=${type}`); 
   };
@@ -16,7 +16,7 @@ const SideBar: React.FC = () => {
     <div className="sideBar"> 
       <ul>
         {categories?.map((item, key) => (
-          <li key={key} className={typeSearch==item && 'sideBar-active'} onClick={() => navigate(item)}>
+          <li key={key} className={typeSearch===item ? 'sideBar-active' : ''} onClick={() => navigate(item)}>
             {item} 
           </li>
         ))}
