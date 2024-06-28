@@ -10,7 +10,7 @@ interface ProductsItemsProps{
 interface itemList{
     imageLink:string;
     title:string;
-    id:string;
+    id:number;
 }
 
 const CategoryProductCard:React.FC<ProductsItemsProps> =  ({item}) =>{
