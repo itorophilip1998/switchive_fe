@@ -3,6 +3,7 @@ import moment from "moment";
 const p='/images/indexPage';
 const u='/indexPage';
 const c='/categories';
+const pr='/product';
 const t=Date.now()
 export const navLinks=[
     {
@@ -528,3 +529,42 @@ export const faq=[
     },
 
 ]
+
+ 
+export const reviewsListdummy = [
+    
+    {
+      imageLink: `${pr}/user2.svg`,
+      name: 'John Smith',
+      review: 5,
+      description: 'I absolutely love it!',
+      date: moment().format('DD/MM/yyyy'),
+    },
+    {
+      imageLink: `${pr}/user1.svg`,
+      name: 'Jenny Macroom',
+      review: 5,
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
+      date: moment().format('DD/MM/yyyy'),
+
+    },
+    
+    {
+      imageLink: `${pr}/user1.svg`,
+      name: 'Jane Smith',
+      review: 3,
+      description: 'I had problem with puchasing it before buh i thing they have fixed it ',
+      date: moment().format('DD/MM/yyyy'),
+
+    },
+    {
+      imageLink: `${pr}/user1.svg`,
+      name: 'Jane Smith',
+      review: 5,
+      description: 'I absolutely love it!',
+      date: moment().format('DD/MM/yyyy'),
+
+    },
+     
+  ];
+   

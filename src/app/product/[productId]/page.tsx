@@ -1,10 +1,12 @@
 'use client'
 import CategoryProductCard from '@/components/categoriesPageCompnents/CategoryProductCard'
 import React from 'react'
-import { topProduct } from '@/utils/dummy';
+import { reviewsListdummy, topProduct } from '@/utils/dummy';
 import { useRouter } from 'next/navigation';
 import CustomImage from '@/components/CustomImage';
 import PayBox from '@/components/categoriesPageCompnents/PayBox';
+import Reviews from '@/components/categoriesPageCompnents/Reviews';
+import ReactStars from 'react-stars';
 
 interface ProductItem {
   imageLink: string;
@@ -32,9 +34,20 @@ function Page() {
               <CustomImage src={'categories/c3.svg'} />
               <h4 className="text-bold">PKR 1000 - 50000</h4>
             </div>
+            {/* top reviews */}
 
+            <div className="rBox mt-4">
+              <h6 className="text-bold d-flex justify-content-between align-items-center">Reviews (12)   <ReactStars
+                    count={5}
+                    value={4}
+                    size={20}
+                    color2={'#ffd333'}
+                    className='stars d-inline-block'
+                    edit={false}/></h6>
+            {reviewsListdummy?.slice(0,2)?.map((item, key) => <Reviews item={item} key={key} />)}
+            </div>
             <div className="watchList">
-              <button className="btn  btn-primary px-5 py-4 my-4 text-center  ">Add to Wishlist </button>
+              <button className="btn  btn-primary px-5 py-4 my-4 text-center  w-100">Add to Wishlist </button>
               <ul>
                 <li> <CustomImage src={'product/h1.svg'} /> Instant delivery</li>
                 <li> <CustomImage src={'product/h3.svg'} /> Lower network fees</li>
