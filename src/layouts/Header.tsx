@@ -5,13 +5,15 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { RiCloseLargeLine } from 'react-icons/ri';
 import { navLinks, navLinks2 } from '@/utils/dummy'; // Adjust path as per your project structure
+import { useSelector, useDispatch } from 'react-redux';
+import { RootState } from '@/store';
+import { RiCloseLargeFill } from "react-icons/ri";
 
 function Header() { 
   const [currentUrl, setCurrentUrl] = useState<string>('');
   const [nav, setNav] = useState<boolean>(false);
-
+  const totalItem = useSelector((state: RootState) => state.cart.totalItem);
  
-
   return (
     <header>
       {/* Navbar 1 */}
@@ -96,25 +98,35 @@ function Header() {
             </ul>
 
             <form className="" role="search">
-              <button className="btn" type="button">
+            
+              <button className="btn shadow-0 border-0" type="button" data-bs-toggle="dropdown" >
                 <Image
                   src="/images/indexPage/cart.svg"
                   width={40}
                   height={40}
                   alt="logo"
                 />
-                <small className="position-absolute notificationBadge translate-middle badge rounded-pill bg-danger">
-                  1<span className="visually-hidden"></span>
-                </small>
+                {totalItem ? <small className="position-absolute notificationBadge translate-middle badge rounded-pill bg-danger">
+                {totalItem}<span className="visually-hidden"></span>
+                </small>:""}
               </button>
-              <button className="btn" type="button">
+              {/* <div className="dropdown position-absolute">  
+              <ul className="dropdown-menu p-3">
+              <li><button className="btn border" href="#"><RiCloseLargeFill />   </button></li>
+              <li><a className="dropdown-item" href="#">Action</a></li>
+              <li><a className="dropdown-item" href="#">Another action</a></li>
+              <li><a className="dropdown-item" href="#">Something else here</a></li>
+            </ul> */}
+             
+              <button className="btn shadow-0 border-0" type="button">
                 <Image
                   src="/images/indexPage/wallet.svg"
                   width={40}
                   height={40}
                   alt="logo"
                 />
-              </button>
+              </button> 
+
               <button className="btn btn-danger login shadow-sm" type="button">
                 Login
               </button>

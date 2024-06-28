@@ -3,9 +3,9 @@ import { useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 import CustomImage from '@/components/CustomImage';
 import { topProduct } from '@/utils/dummy';
-import SideBar from '@/components/categoriesPageCompnents/SideBar';
+import SideBar from '@/components/categoriesPageComponents/SideBar';
 import Faq from '@/components/Faq';
-import CategoryProductCard from '@/components/categoriesPageCompnents/CategoryProductCard';
+import CategoryProductCard from '@/components/productPageComponents/CategoryProductCard';
 
 interface ProductItem {
   imageLink: string;

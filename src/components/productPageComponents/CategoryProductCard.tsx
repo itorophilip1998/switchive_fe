@@ -10,12 +10,13 @@ interface ProductsItemsProps{
 interface itemList{
     imageLink:string;
     title:string;
+    id:string;
 }
 
 const CategoryProductCard:React.FC<ProductsItemsProps> =  ({item}) =>{
   const navigate=useRouter();
   return ( 
-        <div className={"card"} style={{ width: "18rem" }} onClick={()=>navigate.push(`/product/${item?.title}`)}>
+        <div className={"card"} style={{ width: "18rem" }} onClick={()=>navigate.push(`/product/${item?.id}`)}>
           <CustomImage 
             src={item?.imageLink} 
             className={"card-img-top"} 

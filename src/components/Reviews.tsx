@@ -1,5 +1,5 @@
 import React from 'react';
-import CustomImage from '../CustomImage';
+import CustomImage from './CustomImage';
 import ReactStars from 'react-stars';
 
 interface ReviewItem {

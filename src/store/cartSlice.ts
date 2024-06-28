@@ -1,16 +1,17 @@
-// store/cartSlice.ts
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
+// Define the CartItem and CartState interfaces
 interface CartItem {
   id: number;
   name: string;
   price: number;
-  quantity: number;
+  amount: number; 
 }
 
 interface CartState {
   items: CartItem[];
   totalAmount: number;
+  totalItem: number;
 }
 
 // Function to load cart state from localStorage
@@ -18,12 +19,12 @@ const loadState = (): CartState => {
   try {
     const serializedState = localStorage.getItem('cart');
     if (serializedState === null) {
-      return { items: [], totalAmount: 0 };
+      return { items: [], totalAmount: 0, totalItem: 0 };
     }
     return JSON.parse(serializedState);
   } catch (e) {
     console.warn('Could not load cart state from localStorage', e);
-    return { items: [], totalAmount: 0 };
+    return { items: [], totalAmount: 0, totalItem: 0 };
   }
 };
 
@@ -43,21 +44,36 @@ const cartSlice = createSlice({
   name: 'cart',
   initialState,
   reducers: {
-    addItem: (state, action: PayloadAction<{ id: number; name: string; price: number }>) => {
-      const existingItem = state.items.find(item => item.id === action.payload.id);
+    addItem: (
+      state,
+      action: PayloadAction<{ id: number; name: string; price: number; amount: number }>
+    ) => {
+      const existingItem = state.items.find(
+        (item: CartItem) => item.id === action.payload.id
+      );
       if (existingItem) {
-        existingItem.quantity += 1;
+        existingItem.amount = action.payload.amount;
       } else {
-        state.items.push({ ...action.payload, quantity: 1 });
+        state.items.push({ ...action.payload });
+        state.totalItem += 1; 
       }
-      state.totalAmount += action.payload.price;
+
+      state.totalAmount = state.items.reduce(
+        (total, item) => total + (item.price * item.amount),
+        0
+      );
       saveState(state);
     },
     removeItem: (state, action: PayloadAction<number>) => {
-      const existingItem = state.items.find(item => item.id === action.payload);
+      const existingItem = state.items.find(
+        (item) => item.id === action.payload
+      );
       if (existingItem) {
-        state.totalAmount -= existingItem.price * existingItem.quantity;
-        state.items = state.items.filter(item => item.id !== action.payload);
+        state.totalAmount -= existingItem.price * existingItem.amount;
+        state.items = state.items.filter(
+          (item) => item.id !== action.payload
+        );
+        state.totalItem -= 1;
         saveState(state);
       }
     },

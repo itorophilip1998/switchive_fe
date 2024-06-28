@@ -1,11 +1,11 @@
 'use client'
-import CategoryProductCard from '@/components/categoriesPageCompnents/CategoryProductCard'
+import CategoryProductCard from '@/components/productPageComponents/CategoryProductCard'
 import React from 'react'
 import { reviewsListdummy, topProduct } from '@/utils/dummy';
 import { useRouter } from 'next/navigation';
 import CustomImage from '@/components/CustomImage';
-import PayBox from '@/components/categoriesPageCompnents/PayBox';
-import Reviews from '@/components/categoriesPageCompnents/Reviews';
+import PayBox from '@/components/productPageComponents/PayBox'
+import Reviews from '@/components/Reviews';
 import ReactStars from 'react-stars';
 
 interface ProductItem {
@@ -81,9 +81,7 @@ function Page() {
       </div>
 
 
-
-
-
+ 
       <div className="mt-5">
         <h1 className='otherProducth1' >Other products </h1>
         <div className={"categoriesCustomList"}>

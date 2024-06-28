@@ -1,14 +1,23 @@
 'use client'
 import React,{useState} from 'react';
-
+import { useSelector, useDispatch } from 'react-redux'; 
+import { addItem } from '@/store/cartSlice';
+import { usePathname } from 'next/navigation';
 
 function PayBox() {
+    const dispatch = useDispatch();
+    const getpath = usePathname();
     const list = [
         500, 1000, 2000, 2500, 3000, 3500, 4000, 4500, 5000, 5500, 7000,1000
     ];
     const usdtEstimation = Array.from({ length: 96 }, (_, i) => i + 10); 
    const [value, setValue]=useState<number | string>('')
-//    console.debug(value)
+   const handleAddToCart = (id: number, name: string) => { 
+    dispatch(addItem({ id, name, amount:value }));
+  };
+  const productId=getpath.split('/').filter(Boolean).pop(); 
+
+  const productName="New Product";
     return (
         <div className='payBox'>
             <h5>Suggested Amount’s in PKR</h5>
@@ -39,7 +48,8 @@ function PayBox() {
                 </div>
                 <div className="col-md-4 mt-5">
                 <button className='btn p-3 mx-3' >Close</button>
-                <button className='btn btn-primary p-3 shadow-sm '>Add to Cart</button>
+                {/* handleAddToCart(product.id, product.name, product.price)} */}
+                <button className='btn btn-primary p-3 shadow-sm' onClick={() => handleAddToCart(productId, productName)}>Add to Cart</button>
                     
                 </div>
             </div>
