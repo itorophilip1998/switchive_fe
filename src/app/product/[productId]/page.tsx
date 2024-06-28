@@ -1,4 +1,4 @@
- 
+'use client'
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import { reviewsListdummy, topProduct } from '@/utils/dummy';
