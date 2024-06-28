@@ -1,11 +1,11 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 // Define the CartItem and CartState interfaces
 interface CartItem {
   id: number;
   name: string;
   price: number;
-  amount: number; 
+  amount: number;
 }
 
 interface CartState {
@@ -13,17 +13,25 @@ interface CartState {
   totalAmount: number;
   totalItem: number;
 }
+interface PayloadAction {
+  payload: {
+    id: number;
+    name: string;
+    price: number;
+    amount: number;
+  };
+}
 
 // Function to load cart state from localStorage
 const loadState = (): CartState => {
   try {
-    const serializedState = localStorage.getItem('cart');
+    const serializedState = localStorage.getItem("cart");
     if (serializedState === null) {
       return { items: [], totalAmount: 0, totalItem: 0 };
     }
     return JSON.parse(serializedState);
   } catch (e) {
-    console.warn('Could not load cart state from localStorage', e);
+    console.warn("Could not load cart state from localStorage", e);
     return { items: [], totalAmount: 0, totalItem: 0 };
   }
 };
@@ -32,22 +40,19 @@ const loadState = (): CartState => {
 const saveState = (state: CartState) => {
   try {
     const serializedState = JSON.stringify(state);
-    localStorage.setItem('cart', serializedState);
+    localStorage.setItem("cart", serializedState);
   } catch (e) {
-    console.warn('Could not save cart state to localStorage', e);
+    console.warn("Could not save cart state to localStorage", e);
   }
 };
 
 const initialState: CartState = loadState();
 
 const cartSlice = createSlice({
-  name: 'cart',
+  name: "cart",
   initialState,
   reducers: {
-    addItem: (
-      state,
-      action: PayloadAction<{ id: number; name: string; price: number; amount: number }>
-    ) => {
+    addItem: (state: CartState, action: PayloadAction) => {
       const existingItem = state.items.find(
         (item: CartItem) => item.id === action.payload.id
       );
@@ -55,24 +60,22 @@ const cartSlice = createSlice({
         existingItem.amount = action.payload.amount;
       } else {
         state.items.push({ ...action.payload });
-        state.totalItem += 1; 
+        state.totalItem += 1;
       }
 
       state.totalAmount = state.items.reduce(
-        (total, item) => total + (item.price * item.amount),
+        (total, item) => total + item.price * item.amount,
         0
       );
       saveState(state);
     },
-    removeItem: (state, action: PayloadAction<number>) => {
+    removeItem: (state: CartState, action: PayloadAction) => {
       const existingItem = state.items.find(
-        (item) => item.id === action.payload
+        (item) => item.id === action.payload.id
       );
       if (existingItem) {
         state.totalAmount -= existingItem.price * existingItem.amount;
-        state.items = state.items.filter(
-          (item) => item.id !== action.payload
-        );
+        state.items = state.items.filter((item) => item.id !== action.payload.id);
         state.totalItem -= 1;
         saveState(state);
       }

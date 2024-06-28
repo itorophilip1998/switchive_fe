@@ -1,6 +1,13 @@
  
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
 
+
+interface PayloadAction {
+  payload: {
+    id: number;
+  name: string;
+  price: number;}
+}
 interface ProductState {
   products: Array<{ id: number, name: string, price: number }>;
 }
@@ -10,14 +17,17 @@ const initialState: ProductState = {
 };
 
 const productSlice = createSlice({
-  name: 'product',
+  name: "product",
   initialState,
   reducers: {
-    addProduct: (state, action: PayloadAction<{ id: number, name: string, price: number }>) => {
+    addProduct: (state: ProductState, action: PayloadAction) => {
       state.products.push(action.payload);
     },
-    removeProduct: (state, action: PayloadAction<number>) => {
-      state.products = state.products.filter(product => product.id !== action.payload);
+    removeProduct: (state: ProductState, action: PayloadAction) => {
+      state.products = state.products.filter(
+        (product) => product.id !== action.payload.id
+      ); 
+
     },
   },
 });
