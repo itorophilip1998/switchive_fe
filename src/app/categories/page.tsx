@@ -10,6 +10,7 @@ import CategoryProductCard from '@/components/productPageComponents/CategoryProd
 interface ProductItem {
   imageLink: string;
   title: string;
+  id:number
 }
 
 const Page = () => {
