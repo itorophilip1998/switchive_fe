@@ -19,7 +19,7 @@ function HeroBG() {
   return ( 
       <div className='heroBg'> 
         <div className="bgHeroContainer  ">
-        <CustomImage src={"indexPage/HeroBG.png"} />
+        <CustomImage src={"indexPage/heroBG.png"} />
         </div>
  
            <div className="textHeroBg ">
