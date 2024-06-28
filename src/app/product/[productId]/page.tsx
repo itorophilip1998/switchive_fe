@@ -1,5 +1,4 @@
- 'use client';
-
+ 
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import { reviewsListdummy, topProduct } from '@/utils/dummy';
@@ -9,15 +8,21 @@ import PayBox from '@/components/productPageComponents/PayBox';
 import Reviews from '@/components/Reviews';
 import ReactStars from 'react-stars';
  
-interface itemList{
-  imageLink:string;
-  title:string;
-  id:number;
+interface ItemList {
+  imageLink: string;
+  title: string;
+  id: number;
 }
-
-function Page() {
+ 
+interface PageProps {
+  params: {
+    productId: string;  
+  };
+}
+ 
+const Page: React.FC<PageProps> = ({ params }) => {
   const navigate = useRouter();
-
+  const { productId } = params; 
   return (
     <div className='product containerLayout '>
       <div className="productDetails container">
@@ -88,7 +93,7 @@ function Page() {
       <div className="mt-5">
         <h1 className='otherProducth1'>Other products</h1>
         <div className="categoriesCustomList">
-          {topProduct?.slice(0, 15)?.map((item:itemList, key: number) => (
+          {topProduct?.slice(0, 15)?.map((item: ItemList, key: number) => (
             <CategoryProductCard key={key} item={item} />
           ))}
         </div>
