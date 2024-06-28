@@ -11,6 +11,7 @@ import ReactStars from 'react-stars';
 interface ProductItem {
   imageLink: string;
   title: string;
+  id:number;
 }
 function Page() {
   const navigate = useRouter();
