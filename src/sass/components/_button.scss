@@ -2,8 +2,7 @@
     background: $primary !important;
     color: rgba(255, 255, 255, 1) !important;
     border-radius: $btnRadius !important;
-    border:none !important;  
-    font-family: Poppins !important;
+    border:none !important;   
     font-size: 14.54px !important;
     font-weight: 400 !important;
     // line-height: 13.73px !important;
@@ -19,6 +18,6 @@
     transition:  transform 0.3s !important;
     &:hover
 {
-         transform: scale(1.1); 
+     transform: scale(1.1); 
 }
 }

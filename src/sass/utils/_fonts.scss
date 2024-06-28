@@ -1,7 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+ 
+
+  
+ 
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/Inter-Bold.ttf') format('truetype');
+}
+body,*,button { 
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3,p ,div,span,*,button,.btn{
+  font-family: 'Poppins', sans-serif !important;
+}
 
  
-body,*,button {
-    font-family: Poppins ;
-}
-  
