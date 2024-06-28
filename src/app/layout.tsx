@@ -4,7 +4,9 @@ import Header from "@/layouts/Header";
 import Footer from "@/layouts/Footer";  
 import AOS from 'aos';
 import { useEffect } from "react";
- 
+import { Provider } from 'react-redux';
+import store from '@/store';
+
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   useEffect(() => {
@@ -26,9 +28,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
 
       <body >
+       <Provider store={store}> 
           <Header/>
            {children}
           <Footer/> 
+      </Provider>
+
         </body>
         
     </html>
